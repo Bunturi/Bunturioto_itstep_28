@@ -73,3 +73,21 @@ class MyVideoPlayer(VideoPlayer):
 
     def fast_forward(self, seconds):
         print(f"Fast forwarding video by {seconds} seconds...")
+
+
+# Implement StreamingPlayer
+class MyStreamingPlayer(StreamingPlayer):
+    def play_stream(self, url):
+        print(f"Streaming from {url}...")
+
+    def pause(self):
+        print("Streaming paused...")
+
+    def stop(self):
+        print("Streaming stopped...")
+
+    def rewind(self, seconds):
+        print(f"Rewinding stream by {seconds} seconds...")
+
+    def fast_forward(self, seconds):
+        print(f"Fast forwarding stream by {seconds} seconds...")
