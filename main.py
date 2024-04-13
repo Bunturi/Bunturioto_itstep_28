@@ -17,3 +17,9 @@ class MediaPlayer(ABC):
     @abstractmethod
     def fast_forward(self, seconds):
         pass
+
+# Define interface for audio player
+class AudioPlayer(MediaPlayer):
+    @abstractmethod
+    def play_audio(self):
+        pass
