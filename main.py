@@ -31,8 +31,27 @@ class VideoPlayer(MediaPlayer):
     def play_video(self):
         pass
 
+
 # Define interface for streaming player
 class StreamingPlayer(MediaPlayer):
     @abstractmethod
     def play_stream(self, url):
         pass
+
+
+# Implement AudioPlayer
+class MyAudioPlayer(AudioPlayer):
+    def play_audio(self):
+        print("Playing audio...")
+
+    def pause(self):
+        print("Audio paused...")
+
+    def stop(self):
+        print("Audio stopped...")
+
+    def rewind(self, seconds):
+        print(f"Rewinding audio by {seconds} seconds...")
+
+    def fast_forward(self, seconds):
+        print(f"Fast forwarding audio by {seconds} seconds...")
