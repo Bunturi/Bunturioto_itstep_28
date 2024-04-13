@@ -55,3 +55,21 @@ class MyAudioPlayer(AudioPlayer):
 
     def fast_forward(self, seconds):
         print(f"Fast forwarding audio by {seconds} seconds...")
+
+
+# Implement VideoPlayer
+class MyVideoPlayer(VideoPlayer):
+    def play_video(self):
+        print("Playing video...")
+
+    def pause(self):
+        print("Video paused...")
+
+    def stop(self):
+        print("Video stopped...")
+
+    def rewind(self, seconds):
+        print(f"Rewinding video by {seconds} seconds...")
+
+    def fast_forward(self, seconds):
+        print(f"Fast forwarding video by {seconds} seconds...")
