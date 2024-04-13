@@ -24,8 +24,15 @@ class AudioPlayer(MediaPlayer):
     def play_audio(self):
         pass
 
+
 # Define interface for video player
 class VideoPlayer(MediaPlayer):
     @abstractmethod
     def play_video(self):
+        pass
+
+# Define interface for streaming player
+class StreamingPlayer(MediaPlayer):
+    @abstractmethod
+    def play_stream(self, url):
         pass
