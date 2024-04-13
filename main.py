@@ -23,3 +23,9 @@ class AudioPlayer(MediaPlayer):
     @abstractmethod
     def play_audio(self):
         pass
+
+# Define interface for video player
+class VideoPlayer(MediaPlayer):
+    @abstractmethod
+    def play_video(self):
+        pass
