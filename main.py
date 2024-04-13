@@ -91,3 +91,26 @@ class MyStreamingPlayer(StreamingPlayer):
 
     def fast_forward(self, seconds):
         print(f"Fast forwarding stream by {seconds} seconds...")
+
+
+# Usage
+audio_player = MyAudioPlayer()
+audio_player.play_audio()
+audio_player.pause()
+audio_player.stop()
+audio_player.rewind(10)
+audio_player.fast_forward(20)
+
+video_player = MyVideoPlayer()
+video_player.play_video()
+video_player.pause()
+video_player.stop()
+video_player.rewind(30)
+video_player.fast_forward(40)
+
+streaming_player = MyStreamingPlayer()
+streaming_player.play_stream("http://heyho.com/stream")
+streaming_player.pause()
+streaming_player.stop()
+streaming_player.rewind(15)
+streaming_player.fast_forward(25)
